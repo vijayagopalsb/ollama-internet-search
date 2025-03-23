@@ -1,9 +1,16 @@
 from serpapi import GoogleSearch
 
+import os
+from dotenv import load_dotenv
+
 def search_internet(query):
+    
+    # Access the SERP API key
+    SERP_API_KEY = serp_api_key()
+
     params = {
         "q": query,
-        "api_key": "with_your_actual_API_key"  # Replace with your actual API key with_your_actual_API_key
+        "api_key": SERP_API_KEY  # Replace with your actual API key 
     }
     search = GoogleSearch(params)
     results = search.get_dict()
@@ -23,6 +30,15 @@ def search_internet(query):
     
     # Default response if no relevant data is found
     return "No weather data found in the response."
+
+def serp_api_key():
+    # Load environment variables from .env file
+    load_dotenv()
+
+    # Access the SERP API key
+    return os.getenv("SERP_API_KEY")
+    
+
 
 # Example usage
 query = "current weather in New York"
