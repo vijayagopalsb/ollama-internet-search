@@ -13,3 +13,14 @@ To use the Ollama Internet Search project, you need to register for a Searp API 
 3. Navigate to the API Key section in your account dashboard.
 
 4. Generate a new API key or copy your existing key.
+
+#### Step 2: Install Dependencies
+1. serpapi:
+Used to interact with the SerpAPI service for fetching real-time data from search engines like Google.
+
+pip install google-search-results
+
+2. python-dotenv:
+Used to load environment variables from a .env file.
+
+pip install python-dotenv
