@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 def search_internet(query):
     
+    # Please Read README file for instructions
     # Access the SERP API key
     SERP_API_KEY = serp_api_key()
 
