@@ -148,6 +148,7 @@ Used to load environment variables from a .env file.
     python main.py
 </pre>
 
+---
 
 #### Contributions
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps
@@ -157,6 +158,8 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 2. Create a new branch for your feature or bug fix.
 
 3. Submit a pull request with a detailed description of your changes.
+
+***
 
 **License**
 This project is licensed under the GPL-3.0.1 License. See the [LICENSE](https://github.com/vijayagopalsb/ollama-internet-search?tab=GPL-3.0-1-ov-file) file for details.
